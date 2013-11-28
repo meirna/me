@@ -4,16 +4,31 @@
 
 	<title>GitHub Page</title>
 
+<script language="javascript" src="./scripts/email.js"></script>
+
 <style>
 
 @font-face {
+    font-family: 'equiplight';
+    src: url('EquipLig-webfont.eot');
+    src: url('EquipLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('EquipLig-webfont.woff') format('woff'),
+         url('EquipLig-webfont.ttf') format('truetype'),
+         url('EquipLig-webfont.svg#equiplight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
     font-family: 'Mono Social Icons Font';
-    src: url('MonoSocialIconsFont-1.10.eot');
-    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    src: url('./icons/MonoSocialIconsFont-1.10.eot');
+    src: url('./icons/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('./icons/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('./icons/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('./icons/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('./icons/MonoSocialIconsFont-1.10.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +45,7 @@
     -ms-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    font-size: 300%;
+    font-size: 400%;
 }
 
 a.symbol:before {
@@ -41,23 +56,42 @@ a.symbol:before {
 
 h1 {
 	font-size: 80px;
+	color: #333333;
 	line-height: 1em;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'equiplight', Arial, sans-serif;
 	text-align: center;
 	padding-top: 100px;
 }
 
 h2 {
 	font-size: 35.555px;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	color: #262626;
+	font-family: 'equiplight', Arial, sans-serif;
+	text-align: center;
+}
+
+h3 {
+	font-size: 15.802px;
+	font-family: 'equiplight', Arial, sans-serif;
 	text-align: center;
 }
 
 p {
-	font-size: 15.802px;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
 	text-align: center;
 	word-spacing: 7.023px;
+}
+
+a:link {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #333333;
+}
+
+a:hover {
+	color: #B2B2B2;
 }
 
 </style>
@@ -67,20 +101,21 @@ p {
 	<header>
 		<h1>Test</h1>
 		<h2>This is a test of GitHub Pages service.<h2>
+		<h3>Contact me <script>mail2("mpiberni","gmail",0,"","by email")</script> or add me on:</h3>
 	</header>
 
 	<p>
-		<span class='symbol'>blogger</span>
-		<span class='symbol'>facebook</span>
-		<span class='symbol'>flickr</span>
-		<span class='symbol'>googleplus</span>
-		<span class='symbol'>instagram</span>
-		<span class='symbol'>lastfm</span>
-		<span class='symbol'>linkedin</span>
-		<span class='symbol'>soundcloud</span>
-		<span class='symbol'>tumblr</span>
-		<span class='symbol'>twitterbird</span>
-		<span class='symbol'>youtube</span>
+		<a href="http://mirnapibernik.blogspot.com"><span class='symbol'>blogger</span>
+		<a href="http://facebook.com/fairydandy"><span class='symbol'>facebook</span></a>
+		<a href="http://www.flickr.com/photos/mirnapibernik"><span class='symbol'>flickr</span></a>
+		<a href="http://plus.google.com/+MirnaPibernik"><span class='symbol'>googleplus</span></a>
+		<a href="http://instagram.com/divlja"><span class='symbol'>instagram</span></a>
+		<a href="http://www.last.fm/user/fairy_dandy"><span class='symbol'>lastfm</span></a>
+		<a href="http://www.linkedin.com/in/mirnapibernik"><span class='symbol'>linkedin</span></a>
+		<a href="http://soundcloud.com/meirna"><span class='symbol'>soundcloud</span></a>
+		<a href="http://meirna.tumblr.com"><span class='symbol'>tumblr</span></a>
+		<a href="http://twitter.com/meirnaa"><span class='symbol'>twitterbird</span></a>
+		<a href="http://www.youtube.com/user/fairydandyy"><span class='symbol'>youtube</span></a>
 
 	</p>
 
