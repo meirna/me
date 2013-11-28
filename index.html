@@ -6,17 +6,58 @@
 
 <style>
 
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('MonoSocialIconsFont-1.10.eot');
+    src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 300%;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
 h1 {
 	font-size: 80px;
+	line-height: 1em;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	text-align: center;
-	margin-top: 100px;
+	padding-top: 100px;
 }
 
 h2 {
-	font-size: 40px;
-	font-family: Palatino, serif;
+	font-size: 35.555px;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
 	text-align: center;
+}
+
+p {
+	font-size: 15.802px;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	text-align: center;
+	word-spacing: 7.023px;
 }
 
 </style>
@@ -25,7 +66,23 @@ h2 {
 <body>
 	<header>
 		<h1>Test</h1>
-		<h2> This is a test of GitHub Pages service.<h2>
+		<h2>This is a test of GitHub Pages service.<h2>
 	</header>
+
+	<p>
+		<span class='symbol'>blogger</span>
+		<span class='symbol'>facebook</span>
+		<span class='symbol'>flickr</span>
+		<span class='symbol'>googleplus</span>
+		<span class='symbol'>instagram</span>
+		<span class='symbol'>lastfm</span>
+		<span class='symbol'>linkedin</span>
+		<span class='symbol'>soundcloud</span>
+		<span class='symbol'>tumblr</span>
+		<span class='symbol'>twitterbird</span>
+		<span class='symbol'>youtube</span>
+
+	</p>
+
 </body>
 </html>
